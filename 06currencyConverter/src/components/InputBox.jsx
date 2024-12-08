@@ -30,7 +30,7 @@ function InputBox({
           disabled={amountDisable}
           value={amount}
           onChange={(e) =>
-            onAmountChange && onAmountChange(Number(e.target.value))
+            onAmountChange && onAmountChange(Number(e.target.value<0?0:e.target.value))
           } //js sends values in string format in events so wrapping around Number()
         />
       </div>
