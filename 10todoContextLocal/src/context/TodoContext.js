@@ -15,7 +15,7 @@ export const TodoContext = createContext({
   toggleComplete: (id) => {},
 });
 export const TodoProvider = TodoContext.Provider;
-export const useTodo = () => {
+export const useTodoContext = () => {
   return useContext(TodoContext);
 };
 //Ek baat yaad rakhiye ga jab bhi useContext use karte hai, us ko Context dena padhta hai, batana padhta hai
